@@ -13,6 +13,6 @@ export class AppController {
 
   @Get('/hello')
   sayHello():string{
-    return 'Hello everyone';
+    return this.appService.getHi();
   }
 }
